@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/echarts.js"></script>
+    <title>圆环进度条1</title>
+</head>
+<body>
+<div id="pie" style="width: 1366px;height:450px;"></div>
+</body>
+<script type="text/javascript">
+    //柱状图
+    var asd =document.getElementById('pie');
+    var pieChart = echarts.init(asd);
+    var labelTop = {//上层样式
+        normal : {
+            color :'#0099cc',
+            label : {
+                show : true,
+                position : 'center',
+                formatter : '{a}/{b}/{c}/{d}',
+                textStyle: {
+                    baseline : 'bottom',
+                    fontSize: 36
+                }
+            },
+            labelLine : {
+                show : false
+            }
+        }
+    };
+    var labelFromatter = {//环内样式
+        normal : {//默认样式
+            label : {//标签
+                formatter : function (a,b,c){return 100 - c + '%'},
+                // labelLine.length：30,  //线长，从外边缘起计算，可为负值
+                textStyle: {//标签文本样式
+                    color:'black',
+                    align :'center',
+                    baseline : 'top'//垂直对其方式
+                }
+            }
+        },
+    };
+    var labelBottom = {//底层样式
+        normal : {
+            color: '#99ccff',
+            label : {
+                show : true,
+                position : 'center',
+                fontSize: 12
+            },
+            labelLine : {
+                show : false
+            }
+        }
+    };
+
+    var pieChartOption = {
+        title : {
+            text: '',
+            subtext: '',
+            x:'center',
+            //正标题样式
+            textStyle: {
+                fontSize:42,
+                fontFamily:'Arial',
+                fontWeight:100,
+                color:'#1a4eb0',
+            },
+            //副标题样式
+            subtextStyle: {
+                fontSize:24,
+                fontFamily:'Arial',
+                color:"#1a4eb0",
+            },
+        },
+        animation:false,
+        tooltip : {
+            trigger: 'item',
+            showDelay: 0,
+            hideDelay: 50,
+            transitionDuration:0,
+            borderRadius : 8,
+            borderWidth: 2,
+            padding: 10,    // [5, 10, 15, 20]
+        },
+        series : [
+            {
+                type : 'pie',
+                center : ['50%', '50%'],//圆心坐标（div中的%比例）
+                radius: ['70%', '85%'],//半径
+                x: 'left', // for funnel
+                itemStyle : labelTop,//graphStyleA,//图形样式 // 当查到的数据不存在（并非为0），此属性隐藏
+                data : [
+                    {
+                        name:'80%',
+                        value:80,
+                        itemStyle : labelTop
+                    },
+                    {
+                        name:'C级：340.9万元',
+                        value:20,
+                        itemStyle : labelBottom
+                    }
+                ]
+            }
+        ]
+    };
+    pieChart.setOption(pieChartOption);
+</script>
+</html>

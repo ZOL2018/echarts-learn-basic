@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/echarts.js"></script>
+    <title>圆环进度条3</title>
+</head>
+<body>
+<div id="demo" style="width: 600px;height:400px;"></div>
+</body>
+<script type="text/javascript">
+    var demoChart = echarts.init(document.getElementById('demo'));
+
+    var demoOption = {
+        title: {
+            text: '危房改造投入',
+            left : 'center',                    // 标题距离左侧边距
+            top : '0%',                     // 标题距顶部边距
+            textStyle: {
+                color: '#000'
+            }
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter :function (data) {
+                const newStr="C级：500万元 75%"
+                return '改造资金<br\>' + '<span style="font-size: 12px">'+newStr+'</span>'
+            }
+        },
+        series: [,{
+            name:"改造资金",
+            type: "pie",                // 系列1类型: 饼图
+            center: ["25%","50%"],      // 饼图的中心(圆心)坐标，数组的第一项是横坐标，第二项是纵坐标。[ default: ['50%', '50%'] ]
+            radius: ["44%","56%"],      // 饼图的半径，数组的第一项是内半径，第二项是外半径。[ default: [0, '75%'] ]
+                                        // 可以将内半径设大显示成圆环图（Donut chart）。
+            clockWise: false,           // 饼图的扇区是否是顺时针排布。[ default: true ]
+            hoverAnimation: false,
+            itemStyle:{
+                normal: {
+                    show: true,
+                    color: "#2537d2",       // 图形的颜色
+                    label: {                // 图形内部标签
+                        show: false,                 // 是否显示标签
+                    },
+                    labelLine: {            // 标签的视觉引导线样式，在 label 位置 设置为'outside'的时候会显示视觉引导线。
+                        show: false
+                    }
+                },
+                emphasis: {
+                    color: "#3955b9"
+                }
+            },
+            data: [
+                {value: 25,name: " 25%"},
+                {value: 75,name: " 75%",
+                    itemStyle: {
+                        normal: {
+                            color: "#eeeeee",
+                            label: {
+                                show: false
+                            },
+                            labelLine: {
+                                show: false
+                            }
+                        },
+                        emphasis: {
+                            color: "#eeeeee",
+                        }
+                    }}
+            ]
+        },{
+            name:"改造资金",
+            type: "pie",                // 系列1类型: 饼图
+            center: ["25%","50%"],      // 饼图的中心(圆心)坐标，数组的第一项是横坐标，第二项是纵坐标。[ default: ['50%', '50%'] ]
+            radius: [0, "42%"],      // 饼图的半径，数组的第一项是内半径，第二项是外半径。[ default: [0, '75%'] ]
+            // 可以将内半径设大显示成圆环图（Donut chart）。
+            clockWise: false,           // 饼图的扇区是否是顺时针排布。[ default: true ]
+            hoverAnimation: false,
+            itemStyle:{
+                normal: {
+                    show: true,
+                    color: "#bce2e8",       // 图形的颜色
+                    label: {                // 图形内部标签
+                        show: true,                 // 是否显示标签
+                        textStyle: {                // 标签文本样式
+                            color:"#3955b9",
+                            fontSize: 16,
+                            fontWeight: "bold"      // 标签字体加粗,'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
+                        },
+                        position: "center"          // 标签的位置,'outside'(饼图扇区外侧，通过视觉引导线连到相应的扇区)
+                                                    // 'inside'(饼图扇区内部);  'inner' 同 'inside'。
+                                                    // 'center'(在饼图中心位置。)
+                    },
+                    labelLine: {            // 标签的视觉引导线样式，在 label 位置 设置为'outside'的时候会显示视觉引导线。
+                        show: false
+                    }
+                },
+                emphasis: {
+                    color: "#bce2e8"
+                }
+            },
+            data: [
+                {
+                    value: 100,
+                    name: "25%"
+                },
+                {
+                    value: 0,
+                    name: "C级：45万元"
+                }
+            ]
+        },{
+            name:"改造资金",
+            type: "pie",                // 系列1类型: 饼图
+            center: ["25%","50%"],      // 饼图的中心(圆心)坐标，数组的第一项是横坐标，第二项是纵坐标。[ default: ['50%', '50%'] ]
+            radius: ["42%", "44%"],      // 饼图的半径，数组的第一项是内半径，第二项是外半径。[ default: [0, '75%'] ]
+            // 可以将内半径设大显示成圆环图（Donut chart）。
+            clockWise: false,           // 饼图的扇区是否是顺时针排布。[ default: true ]
+            hoverAnimation: false,
+            itemStyle:{
+                normal: {
+                    show: true,
+                    color: "#fff",       // 图形的颜色
+                    label: {                // 图形内部标签
+                        show: false,                 // 是否显示标签
+                    },
+                    labelLine: {            // 标签的视觉引导线样式，在 label 位置 设置为'outside'的时候会显示视觉引导线。
+                        show: false
+                    }
+                }
+            },
+            data: []
+        },{
+            name:"改造资金",
+            type: "pie",                // 系列1类型: 饼图
+            center: ["75%","50%"],      // 饼图的中心(圆心)坐标，数组的第一项是横坐标，第二项是纵坐标。[ default: ['50%', '50%'] ]
+            radius: ["44%","56%"],      // 饼图的半径，数组的第一项是内半径，第二项是外半径。[ default: [0, '75%'] ]
+                                        // 可以将内半径设大显示成圆环图（Donut chart）。
+            clockWise: false,           // 饼图的扇区是否是顺时针排布。[ default: true ]
+            hoverAnimation: false,
+            itemStyle:{
+                normal: {
+                    show: true,
+                    color: "#2537d2",       // 图形的颜色
+                    label: {                // 图形内部标签
+                        show: false,                 // 是否显示标签
+                        },
+                    labelLine: {            // 标签的视觉引导线样式，在 label 位置 设置为'outside'的时候会显示视觉引导线。
+                        show: false
+                    }
+                },
+                emphasis: {
+                    color: "#3955b9"
+                }
+            },
+            data: [
+                {value: 75,name: " 80%"},
+                {value: 25,name: " 20%",
+                    itemStyle: {
+                        normal: {
+                            color: "#eeeeee",
+                            label: {
+                                show: false
+                            },
+                            labelLine: {
+                                show: false
+                            }
+                        },
+                        emphasis: {
+                            color: "#eeeeee",
+                        }
+                    }}
+            ]
+        },{
+            name:"改造资金",
+            type: "pie",                // 系列1类型: 饼图
+            center: ["75%","50%"],      // 饼图的中心(圆心)坐标，数组的第一项是横坐标，第二项是纵坐标。[ default: ['50%', '50%'] ]
+            radius: [0, "42%"],      // 饼图的半径，数组的第一项是内半径，第二项是外半径。[ default: [0, '75%'] ]
+            // 可以将内半径设大显示成圆环图（Donut chart）。
+            clockWise: false,           // 饼图的扇区是否是顺时针排布。[ default: true ]
+            hoverAnimation: false,
+            itemStyle:{
+                normal: {
+                    show: true,
+                    color: "#bce2e8",       // 图形的颜色
+                    label: {                // 图形内部标签
+                        show: true,                 // 是否显示标签
+                        textStyle: {                // 标签文本样式
+                            color:"#3955b9",
+                            fontSize: 16,
+                            fontWeight: "bold"      // 标签字体加粗,'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
+                        },
+                        position: "center"          // 标签的位置,'outside'(饼图扇区外侧，通过视觉引导线连到相应的扇区)
+                                                    // 'inside'(饼图扇区内部);  'inner' 同 'inside'。
+                                                    // 'center'(在饼图中心位置。)
+                    },
+                    labelLine: {            // 标签的视觉引导线样式，在 label 位置 设置为'outside'的时候会显示视觉引导线。
+                        show: false
+                    }
+                },
+                emphasis: {
+                    color: "#bce2e8"
+                }
+            },
+            data: [
+                {
+                    value: 100,
+                    name: "75%"
+                },
+                {
+                    value: 0,
+                    name: "D级：345万元"
+                }
+            ]
+        },{
+            name:"改造资金",
+            type: "pie",                // 系列1类型: 饼图
+            center: ["75%","50%"],      // 饼图的中心(圆心)坐标，数组的第一项是横坐标，第二项是纵坐标。[ default: ['50%', '50%'] ]
+            radius: ["42%", "44%"],      // 饼图的半径，数组的第一项是内半径，第二项是外半径。[ default: [0, '75%'] ]
+            // 可以将内半径设大显示成圆环图（Donut chart）。
+            clockWise: false,           // 饼图的扇区是否是顺时针排布。[ default: true ]
+            hoverAnimation: false,
+            itemStyle:{
+                normal: {
+                    show: true,
+                    color: "#fff",       // 图形的颜色
+                    label: {                // 图形内部标签
+                        show: false,                 // 是否显示标签
+                        },
+                    labelLine: {            // 标签的视觉引导线样式，在 label 位置 设置为'outside'的时候会显示视觉引导线。
+                        show: false
+                    }
+                }
+            },
+            data: []
+        }]
+    };
+    demoChart.setOption(demoOption);
+</script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/echarts.js"></script>
+    <title>圆环进度条2</title>
+</head>
+<body>
+<div id="demo" style="width: 1366px;height:450px;"></div>
+</body>
+<script type="text/javascript">
+    var demoChart = echarts.init(document.getElementById('demo'));
+    //表示文字
+    var labelTop = {
+      normal:{
+          label:{
+              show:false,
+              position:'center',
+              formatter:'{b}',
+              textStyle: {
+                  baseline : 'bottom',  //垂直对齐方式
+                  fontSize:12,
+                  color:'#666',
+                  align : 'center'  //水平对齐方式
+              }
+          },
+          color:'#de4751',
+          labelLine:{//标示线
+              show:false
+          }
+      }
+    };
+    //百分比设置
+    var labelFromatter = {
+        normal : {
+            label : {
+                formatter : function (params){
+                    return 100 - params.value + '/' + '158'
+                },
+                textStyle: {
+                    baseline : 'middle',  //垂直对齐方式
+                    fontSize:27,
+                    color:'#666',
+                    align : 'center'   //水平对齐方式
+                }
+            }
+        }
+    };
+    //数据位置
+    var labelBottom = {
+        normal : {
+            color: '#ccc',
+            label : {
+                show : true,
+                position : 'center'
+            },
+            labelLine : {
+                show : false
+            }
+        },
+        emphasis: {
+            color: 'rgba(0,0,0,0)'
+        }
+    };
+    //环形图
+    BeforeCountOption = {
+        title: {
+            //text: 'C类',
+            //subtext: '明细 >',
+            //sublink: '',
+            x: 'center',
+            y: 'center',
+            itemGap: 50,
+            textStyle : {
+                color : '#666',
+                fontSize : 36,
+                fontWeight : 'normal'
+            },
+            subtextStyle : {
+                color : '#de4751',
+                fontSize : 12
+            }
+        },
+        series : [
+            {
+                type : 'pie',
+                center : ['50%', '50%'],
+                radius: ['78%', '85%'],
+                // x: '0%', // for funnel
+                itemStyle : labelFromatter,
+                data : [
+                    {name:'other', value:30, itemStyle : labelBottom},
+                    {name:'待批人员/全部人员', value:70,itemStyle : labelTop}
+                ]
+            }
+        ]
+    };
+    demoChart.setOption(BeforeCountOption);
+</script>
+</html>
