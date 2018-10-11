@@ -1,0 +1,129 @@
+////echarts api
+
+//创建一个 ECharts 实例，
+//返回 echartsInstance，
+//不能再单个容器上初始化多个 ECharts 实例。
+echarts.init  | Function
+
+//多个图表实例实现联动。
+echarts.connect | Function
+
+//解除图表实例的联动，
+//如果只需要移除单个实例，
+//可以将通过将该图表实例 group 设为空。
+//echarts.disconnect  | Function
+
+//销毁实例，实例销毁后无法再被使用。
+//echarts.dispose  |  Function
+
+//获取 dom 容器上的实例。
+//echarts.getInstanceByDom   |  Function
+
+//注册可用的地图，
+必须在包括 geo 组件或者 map 图表类型的时候才能使用。
+//echarts.registerMap  |  Function
+
+//获取已注册的地图
+//echarts.getMap  |  Function
+
+//注册主题，用于初始化实例的时候指定。
+//echarts.registerTheme  |  Function
+
+////图形相关帮助方法。
+////echarts.graphic   |   *
+
+//输入一组点，和一个矩形，返回被矩形截取过的点。
+//echarts.graphic.clipPointsByRect   |  Function
+
+//输入两个矩形，返回第二个矩形截取第一个矩形的结果。
+//echarts.graphic.clipRectByRect    |   Function
+
+////通过 echarts.init 创建的实例。
+////echartsInstance
+
+//图表的分组，用于联动
+//echartsInstance.group   |  string, number
+
+//设置图表实例的配置项以及数据，万能接口，
+//所有参数和数据的修改都可以通过 setOption 完成，
+//ECharts 会合并新的参数和数据，然后刷新图表。
+//如果开启动画的话，ECharts 找到两组数据之间的差异
+//然后通过合适的动画去表现数据的变化。
+//echartsInstance.setOption   |   Function
+
+//获取 ECharts 实例容器的宽度。
+//echartsInstance.getWidth  |  Function
+
+//获取 ECharts 实例容器的高度。
+//echartsInstance.getHeight   |  Function
+
+//获取 ECharts 实例容器的 dom 节点。
+//echartsInstance.getDom   |  Function
+
+//获取当前实例中维护的option对象，
+//返回的option对象中包含了用户多次setOption
+//合并得到的配置项和数据，也记录了用户交互的状态，
+//例如图例的开关，数据区域缩放选择的范围等等。
+//所以从这份 option 可以恢复或者得到一个新的一模一样的实例。
+//echartsInstance.getOption   |  Function
+
+//改变图表尺寸，在容器大小发生改变时需要手动调用。
+//echartsInstance.resize   |  Function
+
+//触发图表行为，例如图例开关legendToggleSelect,
+//数据区域缩放dataZoom，显示提示框showTip等等，
+//更多见 action 和 events 的文档。
+//payload 参数可以通过batch属性同时触发多个行为。
+//echartsInstance.dispatchAction   |  Function
+
+//绑定事件处理函数。
+//ECharts 中的事件有两种，一种是鼠标事件，
+//在鼠标点击某个图形上会触发，
+//还有一种是 调用 dispatchAction 后触发的事件。
+//每个 action 都会有对应的事件，
+//具体见 action 和  events 的文档。
+//如果事件是外部 dispatchAction 后触发，
+//并且 action 中有 batch 属性触发批量的行为，
+//则相应的响应事件参数里也会把属性都放在 batch 属性中。
+//echartsInstance.on   |  Function
+
+//解绑事件处理函数。
+//echartsInstance.off   |  Function
+
+//转换坐标系上的点到像素坐标值。
+//echartsInstance.convertToPixel   |  Function
+
+//转换像素坐标值到逻辑坐标系上的点。是 convertToPixel 的逆运算。
+//具体实例可参考 convertToPixel。
+//echartsInstance.convertFromPixel   |   Function
+
+//判断给定的点是否在指定的坐标系或者系列上。
+//目前支持在这些坐标系和系列上进行判断：
+//grid,polar,geo,series-map,series-graph,series-pie。
+//echartsInstance.containPixel   |  Function
+
+//显示加载动画效果。
+//可以在加载数据前手动调用改接口显示加载动画，
+//在数据加载完成后调用 hideLoading 隐藏加载动画。
+//echartsInstance.showLoading   |   Function
+
+//隐藏动画加载效果。
+//echartsInstance.hideLoading   |   Function
+
+// 获取数据
+//
+//echartsInstance.getDataURL    |   Function
+
+////获取链接数据
+////
+////echartsInstance.getConnectedDataURL   | *
+
+//清空当前实例，会移除实例中所有的组件和图表。
+//清空后调用 getOption 方法返回一个{}空对象。
+//echartsInstance.clear   |  *
+
+//当前实例是否已经被释放。
+//echartsInstance.isDisposed   |  *
+
+//销毁实例，销毁后实例无法再被使用。
+//echartsInstance.dispose    |   *

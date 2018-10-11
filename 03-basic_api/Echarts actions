@@ -1,0 +1,146 @@
+//echarts actions
+
+//ECharts 中支持的图表行为，通过 dispatchAction 触发。
+//
+
+//高亮指定的数据图形。
+//通过 seriesName 或者 seriesIndex 指定系列。
+//如果要再指定某个数据可以再指定 dataIndex 或者 name。
+//action.highlight  |  Action
+
+//取消高亮指定的数据图形。
+//通过 seriesName 或者 seriesIndex 指定系列。
+//如果要指定某个数据可以再指定 dataIndex 或者 name。
+//action.downplay   |  Action
+
+////图例组件相关的行为，必须引入图例组件后才能使用。
+////action.legend   |  *
+
+//选中图例。
+//action.legend.legendSelect   |  Action
+
+//取消选中图例。
+//action.legend.legendUnSelect    |   Action
+
+//切换图例的选中状态。
+//action.legend.legendToggleSelect    |   Action
+
+/控制图例的滚动。当 legend.type 为 'scroll' 时有效。
+//action.legend.legendScroll   |   Action
+
+////提示框组件相关的行为，必须引入提示框组件后才能使用。
+////action.tooltip  |  *
+
+//显示提示框。
+//有下面两种使用方式。
+//1 指定在相对容器的位置处显示提示框，
+//  如果指定的位置无法显示则无效。
+//2 指定数据图形，根据 tooltip 的配置项显示提示框。
+//
+//action.tooltip.showTip  |  Action
+
+//隐藏提示框。
+//action.tooltip.hideTip  |  Action
+
+////数据区域缩放组件相关的行为，
+////必须引入数据区域缩放组件后才能使用。
+////action.dataZoom   |  *
+
+//数据区域缩放。
+//action.dataZoom.dataZoom   |  Action
+
+////视觉映射组件相关的行为，
+////必须引入视觉映射组件后才能使用。
+////action.visualMap   |  *
+
+//选取映射的数值范围。
+//action.visualMap.selectDataRange   |  Action
+
+////时间轴组件相关的行为，必须引入时间轴组件后才能使用。
+////action.timeline   |  *
+
+//设置当前的时间点。
+//action.timeline.timelineChange   |  Action
+
+//切换时间轴的播放状态。
+//action.timeline.timelinePlayChange  |  Action
+
+////工具栏组件相关的行为，必须引入工具栏组件后才能使用。
+////action.toolbox   |  *
+
+//重置 option。
+//action.toolbox.restore   |  Action
+
+////饼图相关的行为，必须引入饼图后才能使用。
+////action.pie   |  *
+
+//选中指定的饼图扇形。
+//action.pie.pieSelect   |  Action
+
+//取消选中指定的饼图扇形。
+//action.pie.pieUnSelect   |  Action
+
+//切换指定的饼图扇形选中状态。
+//action.pie.pieToggleSelect   |  Action
+
+//地图组件相关的行为，必须引入地图组件后才能使用。
+//action.geo   |  *
+
+//选中指定的地图区域。
+//action.geo.geoSelect   |  Action
+
+//取消选中指定的地图区域
+//action.geo.geoUnSelect   |  Action
+
+//切换指定的地图区域选中状态。
+//action.geo.geoToggleSelect   |  Action
+
+//地图图表相关的行为，必须引入地图图表后才能使用。
+//action.map   |  *
+
+//选中指定的地图区域。
+//action.map.mapSelect   |  Action
+
+//取消选中指定的地图区域。
+//action.map.mapUnSelect   |  Action
+
+//切换指定的地图区域选中状态。
+//action.map.mapToggleSelect    |   Action
+
+////关系图相关的行为，必须引入关系图后才能使用。
+////action.graph   |  *
+
+//将指定的节点以及其所有邻接节点高亮。
+//action.graph.focusNodeAdjacency   |  Action
+
+//取消指定的节点以及其所有邻接节点高亮。
+//action.graph.unfocusNodeAdjacency   |  Action
+
+////区域选择相关的行为。
+////action.brush   |  *
+
+//触发此 action 可向 echarts 中添加一个或多个选框
+//action.brush.brush   |  *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
