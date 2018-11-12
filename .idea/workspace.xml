@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae56ae3-53ba-4395-91b8-8de056133390" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/04-d3_animation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-d3_animation/js/fusioncharts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-d3_animation/js/fusioncharts.theme.fusion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-d3_animation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-echarts_demo_zhengzhou/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-echarts_demo_zhengzhou/js/echarts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,19 +19,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/04-d3_animation/index.html">
+        <entry file="file://$PROJECT_DIR$/06-echarts_demo_zhengzhou/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            <state relative-caret-position="503">
+              <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/05-d3_animation/index.html">
+      <file leaf-file-name="index4.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02-demo_echarts_pie_socre/index4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="2303">
+              <caret line="118" column="35" lean-forward="true" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -67,13 +68,14 @@
         <option value="$PROJECT_DIR$/02-demo_echarts_pie_socre/index2.html" />
         <option value="$PROJECT_DIR$/01-basic_origin/index.html" />
         <option value="$PROJECT_DIR$/02-demo_echarts_pie_socre/index.html" />
-        <option value="$PROJECT_DIR$/02-demo_echarts_pie_socre/index4.html" />
         <option value="$PROJECT_DIR$/02-demo_echarts_pie_socre/index3.html" />
         <option value="$PROJECT_DIR$/03-basic_api/index.html" />
         <option value="$PROJECT_DIR$/03-basic_api/Echarts api" />
         <option value="$PROJECT_DIR$/03-basic_api/Echarts actions" />
         <option value="$PROJECT_DIR$/04-d3_animation/index.html" />
         <option value="$PROJECT_DIR$/05-d3_animation/index.html" />
+        <option value="$PROJECT_DIR$/02-demo_echarts_pie_socre/index4.html" />
+        <option value="$PROJECT_DIR$/06-echarts_demo_zhengzhou/index.html" />
       </list>
     </option>
   </component>
@@ -87,10 +89,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="299" />
-    <option name="y" value="73" />
-    <option name="width" value="868" />
-    <option name="height" value="855" />
+    <option name="x" value="110" />
+    <option name="y" value="91" />
+    <option name="width" value="1078" />
+    <option name="height" value="941" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -106,6 +108,22 @@
               <item name="echarts-learn-basic" type="b2602c69:ProjectViewProjectNode" />
               <item name="echarts-learn-basic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="echarts-learn-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="echarts-learn-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="02-demo_echarts_pie_socre" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="echarts-learn-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="echarts-learn-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="06-echarts_demo_zhengzhou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="echarts-learn-basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="echarts-learn-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="06-echarts_demo_zhengzhou" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -120,15 +138,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Learn-2018\Echarts\echarts-learn-basic" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Learn-2018\Echarts\echarts-learn-basic\06-echarts_demo_zhengzhou" />
       <recent name="F:\Learn-2018\Echarts\echarts-learn-basic\04-d3_animation\js" />
       <recent name="F:\Learn-2018\Echarts\echarts-learn-basic\04-d3_animation" />
       <recent name="F:\Learn-2018\Echarts\echarts-learn-basic\03-basic_api" />
       <recent name="F:\Learn-2018\Echarts\echarts-learn-basic\02-demo_echarts_pie_socre" />
-      <recent name="F:\Learn-2018\Echarts\echarts-learn-basic\01-basic_origin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Learn-2018\Echarts\echarts-learn-basic" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -170,6 +188,11 @@
       <workItem from="1540435116690" duration="721000" />
       <workItem from="1540516091939" duration="5387000" />
       <workItem from="1540805038971" duration="602000" />
+      <workItem from="1541467167941" duration="3907000" />
+      <workItem from="1541566442052" duration="2839000" />
+      <workItem from="1541580797958" duration="24000" />
+      <workItem from="1541582539295" duration="187000" />
+      <workItem from="1541642603407" duration="107000" />
     </task>
     <task id="LOCAL-00001" summary="echarts 饼图 测试">
       <created>1538277832744</created>
@@ -196,16 +219,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36494000" />
+    <option name="totallyTimeSpent" value="43558000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="299" y="73" width="868" height="855" extended-state="0" />
+    <frame x="110" y="91" width="1078" height="941" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3554217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28365386" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.2542153" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.2542153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -260,6 +284,60 @@
     <option name="LAST_COMMIT_MESSAGE" value="Echarts api + actions methods?" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/06-echarts_demo_zhengzhou/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2900">
+          <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06-echarts_demo_zhengzhou/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2525">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06-echarts_demo_zhengzhou/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2525">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06-echarts_demo_zhengzhou/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-d3_animation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-d3_animation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/04-d3_animation/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -422,13 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02-demo_echarts_pie_socre/index4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="72" column="30" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/03-basic_api/js/echarts.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -453,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-basic_api/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/04-d3_animation/js/fusioncharts.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -467,17 +531,48 @@
     <entry file="file://$PROJECT_DIR$/04-d3_animation/js/fusioncharts.theme.fusion.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/04-d3_animation/index.html">
+    <entry file="file://$PROJECT_DIR$/06-echarts_demo_zhengzhou/js/echarts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="150">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/05-d3_animation/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="200">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-basic_api/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-d3_animation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06-echarts_demo_zhengzhou/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo_echarts_pie_socre/index4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2303">
+          <caret line="118" column="35" lean-forward="true" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
         </state>
       </provider>
     </entry>
